@@ -1,10 +1,13 @@
 #!/bin/bash
-sudo apt update
 sudo nano /etc/ssh/sshd_config
 sudo nano /etc/netplan/50-cloud-init.yaml
+sudo apt update
 sudo apt upgrade
 cd /etc
 sudo git clone https://github.com/arne-fuchs/pyUsageApi.git
-cd pyUsageApi
-sudo ./start
+cd
+crontab -l > mycron
+echo "@reboot paython3 /etc/pyUsageApi/api.py" >> mycron
+crontab mycron
+rm mycron
 sudo reboot
