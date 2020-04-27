@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo nano /etc/ssh/sshd_config
-sudo nano /etc/netplan/50-cloud-init.yaml
+sudo nano /etc/netplan/00-installer-config.yaml
 sudo apt update
 sudo apt upgrade
 cd /etc
