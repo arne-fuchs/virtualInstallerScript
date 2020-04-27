@@ -7,7 +7,7 @@ cd /etc
 sudo git clone https://github.com/arne-fuchs/pyUsageApi.git
 cd
 crontab -l > mycron
-echo "@reboot paython3 /etc/pyUsageApi/api.py" >> mycron
+echo "@reboot python3 /etc/pyUsageApi/api.py" >> mycron
 crontab mycron
 rm mycron
 sudo reboot
