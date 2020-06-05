@@ -10,7 +10,7 @@ crontab -l > mycron
 echo "@reboot python3 /etc/pyUsageApi/api.py" >> mycron
 crontab mycron
 rm mycron
-sudo apt install python3-pip
+sudo apt install python3-pip --yes
 pip3 install Flask
 pip3 install psutil
 pip3 install uptime
