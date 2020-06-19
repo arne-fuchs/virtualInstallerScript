@@ -14,4 +14,5 @@ sudo apt install python3-pip --yes
 pip3 install Flask
 pip3 install psutil
 pip3 install uptime
+sudo apt install net-tools
 sudo reboot
