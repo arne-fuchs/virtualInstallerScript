@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo nano /etc/hostname
 sudo nano /etc/ssh/sshd_config
 sudo nano /etc/netplan/*
 sudo apt update
